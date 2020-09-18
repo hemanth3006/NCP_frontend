@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.card-container1 {
+    width: 1500px;
+    overflow-x: scroll;
+    display: flex;
+    padding: 3rem;
+}
+
+.card1 {
+    min-width: 300px;
+    height: 350px;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: 0.2s;
+}
+
+.date {
+    color: #8a8a8a;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem;
+}
+
+.tags div {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+}
+
+.card1 .category-title {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.card1 .article-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card1 .article-header {
+    margin-bottom: auto;
+}
+
+.card1 .author {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.author .info .caption {
+    color: #ffffff;
+}
+
+.card1:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card1:hover {
+    transform: translateY(-1rem);
+}
+
+.card1:hover~.card1{
+    transform: translateX(130px);
+}

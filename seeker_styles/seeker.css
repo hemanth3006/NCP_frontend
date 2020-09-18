@@ -1,0 +1,291 @@
+
+body {
+    font-family: Arial;
+    margin: 0;
+    font-family: 'Kufam', cursive;
+    /* background: -webkit-linear-gradient(to right, #9a9b9c, #aabbda);
+    background: linear-gradient(to right, #eef2f8, #8c93a1); */
+    background: #417cd4;
+  }
+  /* body{
+    background: #3399ff;
+  }
+   */
+  
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+    
+  }
+  
+  .small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+  
+/*  
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #FDC830;  
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  
+    background: linear-gradient(to right, #F37335, #FDC830); 
+    
+    color: white;
+    font-size: 20px;
+ 
+  }
+  @keyframes example {
+    from {background: #1D4350; 
+      background: -webkit-linear-gradient(to right, #cf8781, #347085);  
+      background: linear-gradient(to right, #b36761, #8d989c);}
+    to { background: #1D4350;
+      background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+      background: linear-gradient(to right, #A43931, #1D4350);}
+  }
+  .header h1{
+      float: left;
+  }
+  .header p{
+      text-align: right;
+  } */
+  .header2{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  .heading{
+    padding-bottom: 35px;
+  }
+  .sel{
+    margin-left: -50px;
+    background-color: transparent;
+    color: #161616bb;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid rgba(75, 69, 69, 0.425) 1px;
+    padding: 3px 10px;
+  }
+  .text-line {
+    background-color: transparent;
+    color: #000000bb;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid rgba(75, 69, 69, 0.425) 1px;
+    padding: 3px 10px;
+  }
+  /* input[type="text"] {
+  
+    border:none;   border-bottom:1px solid black;
+    
+  
+  } */
+  .edit{
+      text-align: 'center';
+      justify-content: 'center';
+      align-content: 'center';
+      margin-left: 28%;
+      margin-right:30%;
+      height: 600px;
+      border-style: hidden;
+      border-color: #d3a668;
+      background:white;
+      border-radius: 50px;
+      box-shadow: 8px 8px 12px 12px rgba(0,0,0,0.4);
+  }
+  .edit form{
+      display:block;
+      text-align:center;
+      padding:30px 30px 30px 30px;
+  }
+  .edit:hover {
+      box-shadow: 16px 16px 24px 24px rgba(0,0,0,0.4);
+    }
+    .one{
+      float: left;
+      width:50%;
+      
+  
+    }
+    .two{
+      margin-left:50%;
+      width:50%;
+    }
+  
+    .one label {
+      width:180px;
+      clear:left;
+      text-align:left;
+      padding-right:10px;
+  }
+  
+  .two label{
+      width:180px;
+      clear:right;
+      text-align:left;
+      
+  }
+  
+  .one input,label {
+      float:left;
+      margin-left: 60px;
+      margin-bottom:10px;
+  }
+  .two input,label{
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  .end label{
+    clear: both;
+    margin-left: 85px;
+    padding-top: 20px;
+  }
+  .button{
+   position: absolute;
+   margin: 10px 230px ; 
+   padding:20px;
+  }
+  
+  
+  
+    /* .button {
+      clear: both;
+      background-color: #4CAF50; 
+      border: none;
+      color: white;
+      padding: 16px 64px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 24px 24px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: white; 
+      color: black; 
+      border: 1px solid rgba(9, 247, 207, 0.404) ;
+      border-radius: 20px;
+      box-shadow: 16px 16px 16px 16px rgba(0,0,0,0.2);
+    }
+    
+    .button1:hover {
+      background-color: #58e9f3c4;
+      color: white;
+    } */
+    .end{
+      clear: both;
+      background:red;
+    }
+    .maruthibutton {
+      display: block;
+      padding: 16px 64px;
+      /* margin: 100px -10px; */
+      margin-top:50px;
+      margin-left:-10px;
+      background-color: #fff;
+      
+      transition: 0.3s;
+      border-radius: 20px;
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .maruthibutton1 {
+      background-color: white; 
+      color: black; 
+      border: 1px solid  rgba(0,0,0,0.2) ;
+      border-radius: 20px;
+      
+    }
+    
+    .maruthibutton1:hover {
+      box-shadow: 24px 24px 24px 24px rgba(0,0,0,0.2);
+      background-color: #417cd4;
+      color: white;
+    }
+   
+    

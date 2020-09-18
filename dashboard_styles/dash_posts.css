@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  .logo_choose{
+    margin-bottom: 200px;
+  }
+ 
+  .container2 {
+    width:40%;
+  
+    
+    }
+
+    .logo {
+        
+      float:left; 
+      height:200px;
+      width:20%;
+      margin-top:   10px;
+      margin-left: 70px;
+
+        	
+    }
+    .maruthitext {
+      color:black;
+      width:50%;
+   
+      margin-left: -0px;
+      
+        
+  }
+    .text{
+        width:100%;
+        text-align: center;
+    }
+    .right{
+      margin-top: auto;
+      margin-left:45%;
+        width:60%;
+    }
+    .choice {
+        height: 450px;
+        float: left;
+        margin-left: 75px;
+        margin-top: 20px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 20px;
+
+    }
+    .choice:hover {
+        box-shadow: 16px 16px 24px 24px rgba(0,0,0,0.2);
+      }
+      
+     .image {
+      
+        padding: -60px 6px 6px 6px;
+      }
+      .image img{
+        border-radius: 20px;
+      }
+      
+    .details  {
+        padding: 2px 16px;
+      }
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 24px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        background-color: white; 
+        color: black; 
+        border: 1px solid rgba(9, 247, 207, 0.404) ;
+        border-radius: 20px;
+        box-shadow: 16px 16px 16px 16px rgba(0,0,0,0.2);
+      }
+      
+      .button1:hover {
+        background-color: #58e9f3c4;
+        color: white;
+      }
+      .maruthibutton {
+        float: center;
+        padding: 16px 64px;
+        margin: 4px 49px;
+        background-color: #fff;
+       
+        transition: 0.3s;
+        border-radius: 20px;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      
+      .maruthibutton1 {
+        background-color: white; 
+        color: black; 
+        border: 1px solid  rgba(0,0,0,0.2) ;
+        border-radius: 20px;
+        
+      }
+      
+      .maruthibutton1:hover {
+        box-shadow: 24px 24px 24px 24px rgba(0,0,0,0.2);
+        background-color: #00c8ffc0;
+        color: white;
+      }
+     
+     
+      .myimage{
+        
+         margin-top: -0px;
+         padding-left: -80px;
+      }
+  
+  

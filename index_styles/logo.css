@@ -1,0 +1,12 @@
+.half {
+    width:40%;
+    height: auto;
+    }
+
+    div.half2{
+        position: absolute;
+        top: 165px;
+        left: 40px;
+        margin-left:800px;
+        width:50%;
+    }
