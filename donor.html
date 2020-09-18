@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donor_styles/donor.css">
+    <script type="text/javascript" src="donor_styles/donor.js"></script> 
+    <head>
+        <title>
+            Edit Details
+        </title>
+    </head>
+    <body>
+        <div class="ripple-background">
+            <div class="circle xxlarge shade1"></div>
+            <div class="circle xlarge shade2"></div>
+            <div class="circle large shade3"></div>
+            <div class="circle mediun shade4"></div>
+            <div class="circle small shade5"></div>
+          </div>
+          
+        <!-- <div class="header">
+            <h1>
+                Hi, User 
+            </h1>
+            <div class="top_right">
+            <p>ID : ID_NO</p>
+            
+            <p>Oraganisation : Org_name</p>
+            
+            <p>E-mail : email_id</p>
+            </div>
+            <!-- <h2>
+                
+            </h2> -->
+        <div class="header2">
+            <h1>
+                Edit Details
+            </h1>
+        </div>
+        
+        
+            <div class='edit'>
+                <div class='heading'>
+                 <center><h2 style="color:black; padding-top: 30px; font-family:'Fira Sans', sans-serif; margin-bottom: -20px;">Donor</h2></center>
+                </div>
+                
+                <form action="profile.html" method="get" onsubmit="return isValidated();">
+                    
+                    <div class="one">
+                        <label for="fullname" >Full Name</label>
+                    <input type="text" value="Hemanth Kumar Pataballa" class="text-line" placeholder="Enter Your Full Name" name="fname" id="fname" >
+                    
+                    <label for="orgname" >Oraganisation Name</label>
+                    <input type="text" value="Charity ltd" class="text-line" placeholder="Enter Organisation Name" name="orgname" id="orgname" >
+                
+                    <label for="username" >User Name</label>
+                    <input type="text" value="hemanthkumar" class="text-line" placeholder="Enter User Name" name="username" id="username" >
+
+                    <label for="email" >Email ID</label>
+                    <input type="text" value="hemanth@gmail.com" class="text-line" placeholder="Enter Email ID" name="email" id="email" >
+                
+                    <label for="phone" >UPI Phone Number</label>
+                    <input type="number" value="9999999999" class="text-line" placeholder="Enter UPI Phone Number" name="phone" id="phone" >
+                    </div>
+                    <div class="two">
+                        <label for="pwd" >Password</label>
+                        <input type="password" value="Hemanth.123" class="text-line" placeholder="Enter Password" name="pwd" id="pwd" >
+                        
+                        <label for="c_pwd" >Confirm Password</label>
+                        <input type="password" value="Hemanth.123" class="text-line" placeholder="Confirm Password" name="c_pwd" id="c_pwd" >
+                    
+                        <label for="experience" >Experience(in Years)</label>
+                        <input type="text" value="1" class="text-line" placeholder="Experince(in years)" name="experience" id="experience" >
+                        <label for="gstin" >Enter GSTIN</label>
+                        <input type="text" value="abc123" class="text-line" placeholder="Enter Password" name="gstin" id="gstin" >
+                    
+                        <label for="city" >City</label>
+                        <!-- <input type="text" class="text-line" placeholder="City" name="city" required> -->
+                        <select id="sel" class="sel">
+                            <option value="0">Vizag</option>
+                            <option value="1">Hyderabad</option>
+                            <option value="2">Bangalore</option>
+                            <option value="3">Chennai</option>
+                            <option value="4">Coimbatore</option>
+                            <option value="5">Delhi</option>
+                            <option value="6">Mumbai</option>
+                            <option value="7">Kolkata</option>
+                            <option value="8">Vizag</option>
+                            <option value="9">Viajaywada</option>
+                            
+                          </select>
+                    
+                    </div>
+                    <div class='end'>
+                        <label>
+                          <input type="checkbox"  id="terms" name="terms" style="margin-bottom:15px"> Agree To Terms and Conditions
+                        </label>
+                       
+                      </div>
+                      <div class="button">
+                          <button class="maruthibutton maruthibutton1" onClick="ValidateForm(this.form)" type="submit" value="Submit" >Submit</button>
+                      </div>
+                  </form>
+                 
+             </div>
+        
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeker-transcations</title>
+    <link rel="stylesheet" type="text/css" href="seeker_transactions_styles/funds.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs-3.3.6/jqc-1.12.3/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/b-print-1.2.2/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.1.3/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css">
+</head>
+
+<body>
+    <!-- <div>
+        <center><h2>Your transcations</h2></center>
+    </div> -->
+    <center><h2>Seeker Transcarion Details</h2></center>
+    <table id="example" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid"
+        aria-describedby="example_info" style="width: 100%;">
+        <thead>
+            <tr role="row">
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Name: activate to sort column ascending" style="width: 137px;">ID</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Position: activate to sort column ascending" style="width: 215px;">Name</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Office: activate to sort column ascending" style="width: 100px;">Amount Received</th>
+                <th class="sorting_desc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Age: activate to sort column ascending" aria-sort="descending" style="width: 44px;">Amount Spent
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Start date: activate to sort column ascending" style="width: 93px;">Amount left</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    aria-label="Salary: activate to sort column ascending" style="width: 77px;">Purpose</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th rowspan="1" colspan="1">ID</th>
+                <th rowspan="1" colspan="1">Name</th>
+                <th rowspan="1" colspan="1">Amount Received</th>
+                <th rowspan="1" colspan="1">Amount Spent</th>
+                <th rowspan="1" colspan="1">Amount left</th>
+                <th rowspan="1" colspan="1">Purpose</th>
+            </tr>
+        </tfoot>
+        <tbody>
+
+
+            <tr role="row" class="odd">
+                <td class="">A</td>
+                <td>Roman Petty</td>
+                <td>1000</td>
+                <td class="sorting_1">700</td>
+                <td>300</td>
+                <td>Purchased dairymilk</td>
+            </tr>
+            <tr role="row" class="even">
+                <td class="">B</td>
+                <td>Nadia Patel</td>
+                <td>1200</td>
+                <td class="sorting_1">200</td>
+                <td>1000</td>
+                <td>Purchased gems</td>
+            </tr>
+            <tr role="row" class="odd">
+                <td class="">C</td>
+                <td>Frank Foley</td>
+                <td>1500</td>
+                <td class="sorting_1">500</td>
+                <td>1000</td>
+                <td>Purchased Chocolate.</td>
+            </tr>
+            <tr role="row" class="even">
+                <td class="">D</td>
+                <td>Casey Mathis</td>
+                <td>2000</td>
+                <td class="sorting_1">1100</td>
+                <td>900</td>
+                <td>Purchased nutella</td>
+            </tr>
+            <tr role="row" class="odd">
+                <td class="">E</td>
+                <td>Eden Goodwin</td>
+                <td>400</td>
+                <td class="sorting_1">390</td>
+                <td>10</td>
+                <td>Purchased maagi</td>
+            </tr>
+            <tr role="row" class="even">
+                <td class="">F</td>
+                <td>Shawn Mcintyre</td>
+                <td>700</td>
+                <td class="sorting_1">400</td>
+                <td>300</td>
+                <td>Purchased kukure</td>
+            </tr>
+            <tr role="row" class="odd">
+                <td class="">G</td>
+                <td>Cain Harmon</td>
+                <td>1560</td>
+                <td class="sorting_1">550</td>
+                <td>1000</td>
+                <td>Purchased Chocolate.</td>
+            </tr>
+            <tr role="row" class="even">
+                <td class="">H</td>
+                <td>Bruce Potter</td>
+                <td>670</td>
+                <td class="sorting_1">620</td>
+                <td>50</td>
+                <td>Purchased jam</td>
+            </tr>
+            <tr role="row" class="odd">
+                <td class="">I</td>
+                <td>Nicolas Rangel</td>
+                <td>1250</td>
+                <td class="sorting_1">150</td>
+                <td>1100</td>
+                <td>Purchased tooty fruity</td>
+            </tr>
+            <tr role="row" class="even">
+                <td class="">J</td>
+                <td>Shoib basu</td>
+                <td>950</td>
+                <td class="sorting_1">300</td>
+                <td>600</td>
+                <td>Purchased maaza</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script
+        src="https://cdn.datatables.net/v/bs-3.3.6/jqc-1.12.3/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.12/af-2.1.2/b-1.2.2/b-colvis-1.2.2/b-html5-1.2.2/b-print-1.2.2/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.1.3/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <script>
+        $(function () {
+            $('#example').dataTable({
+                paging: false,
+                fixedHeader: {
+                    header: true
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'excel',
+                        text: 'Excel <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>'
+                    },
+                    {
+                        extend: 'pdf',
+                        text: 'PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>'
+                    },
+
+                    'copy',
+                    'pdf',
+                    'colvis'
+                ],
+
+            });
+        });
+    </script>
+</body>
+
+</html>

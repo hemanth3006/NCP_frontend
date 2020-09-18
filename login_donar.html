@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donar Form.</title>
+  <link rel="stylesheet" href="login_donor_styles/login_donar.css">
+  <script src="login_donor_styles/login_donor.js" type="text/javascript"></script>
+</head>
+<body>
+  <h2>Donar Form</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form method="get" action="login_donar.html"  name="registration" onsubmit="return check_name(this);">
+			<h1>Create Account</h1>
+			<span>or use your email for registration</span>
+			<ul>
+				<li><input type="text" placeholder="Full Name" name="name" id="name" /></li>
+
+				<li><input type="date" placeholder="DOB" name="dateofbirth" id="dateofbith"/></li>
+				<li><input type="text" placeholder="Username" name="uname" id="uname"></li>
+				<li><input type="email" placeholder="Email" name="mailid" id="mailid"/></li>
+				<li><input type="password" placeholder="Password" name="password" id="password"/></li>
+        <li><input type="password" placeholder="Confirm Password" name="repass" id="repass"/></li>
+				<li><input type="text" placeholder="Organisation Name" name="oname" id="oname"/></li>
+				<li><input type="number" placeholder="UPI Mobile No" name="mobileno" id="mobileno"/></li>
+				<li><input type="number" placeholder="Experience" name="expe" id="expe"/></li>
+				<li><input type="text" placeholder="GSTIN Number" name="gst" id="gst"/></li>
+
+			</ul>
+<input type="submit" value="Sign Up" class="button"/>
+
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form  method="get" action="dashboard_donor.html" name="registration" onsubmit="return check_Email(this);">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+			<input type="text" placeholder="Email" name="mailid" id="mailid"/>
+			<input type="password" placeholder="Password" name="password" id="password"/>
+			<a href="#">Forgot your password?</a>
+			<input class="button" type="submit" value="Sign In">
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<input class="ghost button" type="submit" value="Sign In" id="signIn"/>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Donar!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<input class="ghost button" type="submit" value="Sign Up"id="signUp"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+  const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
+</script>
+</body>
+</html>
