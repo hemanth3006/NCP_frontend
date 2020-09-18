@@ -1,0 +1,211 @@
+body{
+    background-size: cover; 
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.s1{
+  background:#ddd;
+  backdrop-filter: blur(6px);
+  height: 300px;
+  box-shadow: 8px 8px 18px 18px rgba(0,0,0,0.4);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right:20px;
+  border-radius:40px;
+}
+.s1 img{
+  margin-left: 100px;
+  margin-top: 50px;
+  align-items: center;
+  align-content: center;
+  float: left;
+
+
+}
+.s1 h1{
+  position: absolute;
+  margin-left: 500px;
+  color: yellow;
+
+}
+.s1 p{
+  color: blue;
+
+}
+
+/* .s1 p{
+    height: 150px;
+    margin-left:15%;
+    margin-right:15%;
+    text-align: center;
+    font-size: 25px;
+    padding:50px;
+    
+} */
+.s2 p{
+    
+    position: relative;
+    clear:both;
+    margin-top: 120px;
+    margin-left:12%;
+    margin-right:15%;
+    text-align: center;
+    font-size: 25px;
+}
+.pic img {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 42%;
+  border-radius: 50%;
+}
+
+
+nav {
+  
+  margin-top:20px;
+  background: rgb(145, 145, 145);
+  border-radius: 20%;
+}
+nav ul {
+  margin-left: 40%;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.733);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: 	#fff;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #fff;
+    border-radius: 100%;
+  }
+  100% {
+    background: #000;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
