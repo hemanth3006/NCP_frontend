@@ -8,11 +8,6 @@
     </head>
     <body>
         <link rel="stylesheet" href="payment_styles/payment.css">
-        <script>
-            function fun(){
-                alert("Payment Successful");
-            }
-        </script>
         <main id="main">
             <section id="left">
                 <div id="head">
@@ -22,14 +17,13 @@
                     <p>Help the Needy</p>
                 
                 </div>
-                <h3></h3>
             </section>
             <section id="right">
                 <h1>Donate</h1>
-                <form action="dashboard_donor.html" onsubmit="fun();">
+                <form action="dashboard_donor.html" method="get" onsubmit="return isValidated();">
                     <div id="form-card" class="form-field">
                         <label for="cc-number">Card number:</label>
-                        <input id="cc-number" maxlength="19" placeholder="1111 2222 3333 4444" required>
+                        <input id="cc-number" placeholder="1111 2222 3333 4444" >
                     </div>
         
                     <div id="form-date" class="form-field">
@@ -58,12 +52,49 @@
                     
                     <div id="form-sec-code" class="form-field">
                         <label for="sec-code">Security code:</label>
-                        <input type="password" maxlength="3" placeholder="123" required>
+                        <input id="cvv" type="password" placeholder="123">
                     </div>
                     
-                    <button type="submit" >Donate</button>
+                    <button type="submit" onClick="ValidateForm(this.form)">Donate</button>
                 </form>
             </section>
         </main>
     </body>
+
+    <script type="text/javascript">
+        // function fun(){
+        //     alert("Payment Successful");
+        // }
+        function isValidated() {
+            var card = document.getElementById('cc-number');
+            var card_regex = /^[0-9]{16}$/;
+            var cvv = document.getElementById('cvv');
+            var cvv_regex = /^[0-9]{3}$/;
+            var am = document.getElementById('amt');
+            var am_regex = /^[0-9]{4,7}$/;
+
+            if(card.value.match(card_regex)) {
+
+                if(cvv.value.match(cvv_regex)) {
+                    if(am.value.match(am_regex)) {
+                        alert("Transcation Success");
+                        return true;
+                    }
+                    else {
+                        alert("Enter amount");
+                        return false;
+                    }
+                }
+                else {
+                    alert("Enter a valid cvv number");
+                    return false;
+                }
+            }
+            else {
+                alert("Enter a valid card number");
+                return false;
+            }
+        }
+        
+    </script>
 </html>
