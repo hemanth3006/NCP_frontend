@@ -16,7 +16,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   border-radius:40px;
 }
 .s1 img{
-  margin-left: 100px;
+  margin-left: 150px;
   margin-top: 50px;
   align-items: center;
   align-content: center;
@@ -26,12 +26,12 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 }
 .s1 h1{
   position: absolute;
-  margin-left: 500px;
-  color: yellow;
+  margin-left: 600px;
+  color: black;
 
 }
 .s1 p{
-  color: blue;
+  color: black;
 
 }
 
